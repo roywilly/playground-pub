@@ -14,10 +14,10 @@ spec:
       ports:
        - name: http
          port: 8080
-  environmentConfig:
-    - environment: dev
-      volumeMounts:
-        - type: azure-blob
-          name: rowh-container
-          storage: rowh-container
-          path: /app/mystorage
+      environmentConfig:
+       - environment: dev
+         volumeMounts:
+           - type: azure-blob
+             name: rowh-container
+             storage: rowh-container
+             path: /app/mystorage
