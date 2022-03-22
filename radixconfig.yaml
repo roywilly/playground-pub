@@ -19,5 +19,5 @@ spec:
          volumeMounts:
            - type: azure-blob
              name: rowhstorage111
-             storage: rowh-container
+             storage: rowhcontainer
              path: /app/mystorage
