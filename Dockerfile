@@ -6,5 +6,3 @@ RUN adduser -S -u 1001 -G radix-non-root-group radix-non-root-user
 
 USER 1001
 CMD ["echo", "Hello StackOverflow!"]
-
-
