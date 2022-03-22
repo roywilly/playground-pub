@@ -7,7 +7,6 @@ spec:
     - name: dev
       build:
         from: main
-    - name: prod
   components:
     - name: main
       src: "."
@@ -15,3 +14,10 @@ spec:
       ports:
        - name: http
          port: 8080
+  environmentConfig:
+    - environment: dev
+      volumeMounts:
+        - type: azure-blob
+          name: storage
+          storage: rowh-container
+          path: /app/mystorage
