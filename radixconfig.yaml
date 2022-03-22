@@ -16,8 +16,4 @@ spec:
          port: 8080
       environmentConfig:
        - environment: dev
-         volumeMounts:
-           - type: azure-blob
-             name: rowhstorage111
-             storage: rowhcontainer
-             path: /app/mystorage
+
