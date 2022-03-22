@@ -5,4 +5,4 @@ RUN addgroup -S -g 1001 radix-non-root-group
 RUN adduser -S -u 1001 -G radix-non-root-group radix-non-root-user
 
 USER 1001
-CMD ["ls", "/app/mystorage"]
+CMD ["ls", "/etc"]
